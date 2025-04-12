@@ -1,0 +1,10 @@
+^C:\USERS\KEDAR\DOWNLOADS\AIML\DL\NEURALNETWORK_FROM_SCRATCH_CPP\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/kedar/Downloads/AIML/DL/NeuralNetwork_from_scratch_cpp -BC:/Users/kedar/Downloads/AIML/DL/NeuralNetwork_from_scratch_cpp/build --check-stamp-file C:/Users/kedar/Downloads/AIML/DL/NeuralNetwork_from_scratch_cpp/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
